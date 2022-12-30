@@ -3,6 +3,13 @@ Small Python Decorator tool for making debugging code easier
 
 ![image](https://user-images.githubusercontent.com/99280463/210117272-ca1b4b6a-efbc-4f51-b0e0-50aa49de9ae2.png)
 
+## Features:
+1. Get output for Function names, all parameters passed into the function, and unlimited number of variables set within a function along with their values with as little as a single line of code per function.
+2. Output setup to be visually clear when functions start, end, when functions are called from within other functions.
+3. If one debugged function is called from within another debugged function, it will be visibly clear in the output.
+4. Output will be sized to the size of the terminal.
+
+
 ## How to use:
 1. Add decorators.py to your project folder, for example under `./src/tools` as `decorators.py`
 2. Import it as follows supposing you saved it to `./src/tools/decorators.py`
@@ -24,7 +31,7 @@ debug.DEBUG_ON = True
     
     Advanced Example with different usage: To debug `myfunc(*args,**kwargs)` as well as variables within the inner function use:
       ```py
-      @DEBUG(var1='', var2=0, var3=[],...)
+      @DEBUG()
       async def myfunc(*args,**kwargs):
         debug.KEY['var1'] = 'my string' # or any function that might set the string, for example:
         
