@@ -1,7 +1,5 @@
-# debug-tools
+# debug-decorator
 Small Python Decorator tool for making debugging code easier
-
-![image](https://user-images.githubusercontent.com/99280463/210119095-528703b2-0339-478e-8e87-1a4859438649.png)
 
 ## Features:
 1. Funtion names are outputed in the beginning and end of the debug wrapper with distinct visual cues.
@@ -9,7 +7,11 @@ Small Python Decorator tool for making debugging code easier
 3. If one debugged function is called from within another debugged function, it is visibly clear in the output.
 4. Time taken for each function is displayed at the end of the wrap
 5. Wrapper is sized to the size of the terminal.
-6. If multiple functions are called in a chain, they appear in the other they were called.
+6. Any type of variable can be passed and outputted to terminal (discord.Channel in the example)
+7. Values that are too wide to fit in the terminal are automatically broken apart and made to fit.
+8. If multiple functions are called in a chain, they appear in the other they were called (In the example all functions result from a single function). 
+
+![image](https://user-images.githubusercontent.com/99280463/210119517-3db162ce-e4c5-4901-89e0-63510c6a07d4.png)
 
 ## How to use:
 1. Add decorators.py to your project folder, for example under `./src/tools` as `decorators.py`
