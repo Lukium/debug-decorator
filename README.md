@@ -13,6 +13,9 @@ Small Python Decorator tool for making debugging code easier
 
 ![image](https://user-images.githubusercontent.com/99280463/210119517-3db162ce-e4c5-4901-89e0-63510c6a07d4.png)
 
+## Limitations:
+1. Functions must be defined using \*args, **kwargs or both
+
 ## How to use:
 1. Add decorators.py to your project folder, for example under `./src/tools` as `decorators.py`
 2. Import it as follows supposing you saved it to `./src/tools/decorators.py`
