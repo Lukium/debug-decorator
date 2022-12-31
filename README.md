@@ -1,14 +1,15 @@
 # debug-tools
 Small Python Decorator tool for making debugging code easier
 
-![image](https://user-images.githubusercontent.com/99280463/210117272-ca1b4b6a-efbc-4f51-b0e0-50aa49de9ae2.png)
+![image](https://user-images.githubusercontent.com/99280463/210119095-528703b2-0339-478e-8e87-1a4859438649.png)
 
 ## Features:
-1. Get output for Function names, all parameters passed into the function, and unlimited number of variables set within a function along with their values with as little as a single line of code per function.
-2. Output setup to be visually clear when functions start, end, when functions are called from within other functions.
-3. If one debugged function is called from within another debugged function, it will be visibly clear in the output.
-4. Output will be sized to the size of the terminal.
-
+1. Funtion names are outputed in the beginning and end of the debug wrapper with distinct visual cues.
+2. Positional and Keyword Arguments passed into a debugged function are are grouped by type and listed.
+3. If one debugged function is called from within another debugged function, it is visibly clear in the output.
+4. Time taken for each function is displayed at the end of the wrap
+5. Wrapper is sized to the size of the terminal.
+6. If multiple functions are called in a chain, they appear in the other they were called.
 
 ## How to use:
 1. Add decorators.py to your project folder, for example under `./src/tools` as `decorators.py`
