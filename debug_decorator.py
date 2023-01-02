@@ -124,9 +124,6 @@ def DEBUGALL(function): # Define the decorator function. It takes a single argum
             elapsed_time = round((t_end - t_start).total_seconds(), 3) # Calculate elapsed time and assign it to elapsed time variable
             print_format(string1 = function.__name__, string2 = elapsed_time, type = 'function_end')
 
-            
-
-
             frame_snapshot = None # Set snapshot to none before deleting
             del frame_snapshot # Delete snapshot of frame now that we are done with it.
 
